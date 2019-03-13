@@ -1,2 +1,2 @@
-# hacktiv8-devc-batch10
+# Hacktiv8 x Facebook Developer Circles
 Javascript Development Course - Batch 10
