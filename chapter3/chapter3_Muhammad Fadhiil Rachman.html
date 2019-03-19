@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 3: Data</title>
+</head>
+<body>
+    <p>
+        <form action="return false;">
+            <input type="text" id="search" placeholder="Cari nama planet...">
+            <input type="button" value="Search" onclick="goSearch()">
+        </form>
+    </p>
+    <p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>No.</td>
+                    <td>Name</td>
+                    <td>Diameter</td>
+                    <td>Climate</td>
+                    <td>Population</td>
+                </tr>
+            </thead>
+            <tbody id="doPrint"></tbody>
+        </table>
+    </p>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
