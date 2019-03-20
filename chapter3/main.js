@@ -1,30 +1,22 @@
 // main.js
-var count, html, printData = function(search=false) {
+var count, html, printData = (search=false) => {
     count=0,html='';
-    planet_data.forEach(function(planet) {
+    planet_data.forEach((planet) => {
         count++;
-        name=planet.name;
-        diameter=planet.diameter;
-        climate=planet.climate;
-        population=planet.population;
-        if(planet.name.toLocaleLowerCase()==search&&search!=name) {
+        if(planet.name.toLocaleLowerCase()==search&&search!=planet.name) {
             html+='<tr style="background-color: yellow;">';
         } else {
             html+='<tr>';
         }
-        html+='<td>'+count+'.</td>';
-        html+='<td>'+name+'</td>';
-        html+='<td>'+diameter+'</td>';
-        html+='<td>'+climate+'</td>';
-        if(population!=='unknown') {
-            html+='<td>'+population+'</td>';
-        } else {
-            html+='<td>0</td>';
-        }
-        html+='</tr>';
+        html+=`<td>${count}.</td>
+        <td>${planet.name}</td>
+        <td>${planet.diameter}</td>
+        <td>${planet.climate}</td>
+        <td>${planet.population}</td>
+        </tr>`;
     });
     document.getElementById('doPrint').innerHTML=html;
-}, goSearch = function() {
+}, goSearch = () => {
     txt = document.getElementById('search').value;
     if(txt!=='') {
         printData(txt);

@@ -1,5 +1,5 @@
 // data.js
-var planet_data = [
+planet_data = [
     {
         "name": "Alderaan", 
         "rotation_period": "24", 
