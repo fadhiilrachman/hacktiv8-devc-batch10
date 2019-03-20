@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>
-        <form action="return false;">
+        <form onsubmit="goSearch();return false;">
             <input type="text" id="search" placeholder="Cari nama planet...">
             <input type="button" value="Search" onclick="goSearch()">
         </form>
@@ -16,7 +16,7 @@
     <p>
         <table border="1">
             <thead>
-                <tr>
+                <tr style="font-weight: bold;">
                     <td>No.</td>
                     <td>Name</td>
                     <td>Diameter</td>
