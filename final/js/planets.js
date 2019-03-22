@@ -3,7 +3,7 @@ var count, html, printData = (search=false) => {
     count=0,html='';
     planet_data.forEach((planet) => {
         count++;
-        if(planet.name.toLocaleLowerCase()==search&&search!=planet.name) {
+        if(planet.name.toLocaleLowerCase()==search.toLocaleLowerCase()) {
             html+='<tr style="background-color: yellow;">';
         } else {
             html+='<tr>';
