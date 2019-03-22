@@ -3,6 +3,7 @@ $("form#contact").submit(function(e){
     if(emailAddr=='') {
         $('#modalEmptyEmail').modal('show');
         e.preventDefault();
+        return false;
     }
     msg = $('textarea[name="message"]').val();
     if(msg=='') {
