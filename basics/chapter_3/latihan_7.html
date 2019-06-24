@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <input type="text" id="nama">
+    <input type="button" value="Search" onclick="getNama()">
+    <script>
+        // var nama=prompt("Nama Anda?");
+        // document.querySelector('h1').textContent = nama;
+        // document.querySelector('h1').innerHTML = "<i>Nama: </i>" + nama;
+        var getNama = function() {
+            var nama=document.getElementById("nama").value;
+            document.querySelector('h1').innerHTML = "<i>Nama: </i>" + nama;
+        }
+    </script>
+</body>
+</html>

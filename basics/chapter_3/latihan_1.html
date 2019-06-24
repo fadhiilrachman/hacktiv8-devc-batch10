@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Function sederhana tanpa return
+        function tampilkan() {
+            console.log("halo!");
+            document.write("halo!");
+        }
+
+        tampilkan();
+
+        //2. Function sederhana dengan return
+        function munculkanAngkaDua() {
+            return 2;
+        }
+
+        var tampung = munculkanAngkaDua();
+        console.log(tampung);
+
+        //3. Function dengan satu parameter
+        function TambahDua(angka) {
+            return angka + 2;
+        }
+
+        var tampung = TambahDua(2);
+        console.log(TambahDua(5));
+
+        //4. Function dengan pengiriman parameter lebih dari satu
+
+        function tampilkanAngka(angkaPertama, angkaKedua) {
+            return angkaPertama + angkaKedua;
+        }
+        var temp = tampilkanAngka(5);
+        console.log(temp);
+
+        //5. Function dengan inisialisasi parameter dengan nlai defult
+
+        function tampilkanAngka(angka=1) {
+            return angka;
+        }
+
+        console.log(tampilkanAngka(5));
+        console.log(tampilkanAngka());
+
+        //6. Function dengan pengiriman parameter yang UNDEFINED
+
+        function Angka(angka) {
+            return angka;
+        }
+
+        var tampung=Angka();
+        console.log(tampung);
+
+        //7. Anonymous Function
+
+        var fungsiPenambahan = function(angkaPertama, angkaKedua) {
+            return angkaPertama + angkaKedua;
+        }
+
+        console.log(fungsiPenambahan(2,4));    
+    </script>
+</body>
+</html>

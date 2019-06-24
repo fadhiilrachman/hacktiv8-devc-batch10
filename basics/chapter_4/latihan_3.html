@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-4 col-md-12 col-sm-4 col-12">
+                <h1>Content 1</h1>
+            </div>
+            <div class="col-xl-12 col-lg-4 col-md-12 col-sm-4 col-12">
+                <h1>Content 2</h1>
+            </div>
+            <div class="col-xl-12 col-lg-4 col-md-12 col-sm-4 col-12">
+                <h1>Content 3</h1>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        //   my code
+        $('input')
+            .on('keypress', function(e) {
+                if (e.keyCode==13) {
+                    let isi=$(this).val();
+                    $('div').append(`<p>${isi}</p>`);
+                    $(this).val('');
+                }
+                console.log(e.keyCode);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var apel = {
+            nama: 'Apel',
+            harga: 100000
+        };
+        var jeruk = {
+            nama: 'Jeruk',
+            harga: 120000
+        };
+        var buahBuahan = [{
+            nama: 'Apel',
+            harga: 100000
+        }, {
+            nama: 'Jeruk',
+            harga: 120000
+        }];
+        buahBuahan.forEach(function(buah) {
+            console.log(buah.harga);
+        });
+    </script>
+</body>
+</html>

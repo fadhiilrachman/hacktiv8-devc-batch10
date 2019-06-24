@@ -1,0 +1,21 @@
+/* style.css */
+
+/* tag selector */
+/* p {
+    color: red;
+    font-size: x-small;
+    font-weight: bold;
+}
+h1 {
+    color: blue;
+} */
+
+/* class selector */
+.warna-merah {
+    color: red;
+}
+
+/* id selector */
+#warna-biru {
+    color: blue;
+}

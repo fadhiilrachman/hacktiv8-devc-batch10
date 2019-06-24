@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+        name: "Carrot",
+        "for": "MAX",
+        details: {
+            color: "orange",
+            size: 12
+        }
+        };
+
+        console.log(obj.details.color);
+        console.log(obj["details"]["size"]);
+
+        //Contoh objek dan function
+        var programmer = {
+        name: "Karin",
+        umur: 20,
+        setData: function(nama) {
+            this.name=nama;
+        },
+        getData: function() {
+            return "Nama " + this.name + " Umur " + this.umur;
+        }
+        };
+
+        console.log(programmer.getData());
+    </script>
+</body>
+</html>
